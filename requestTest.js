@@ -4,5 +4,5 @@ request('http://api.openweathermap.org/data/2.5/weather?q=Imperatriz,br&appid=a1
 //  console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
 //  console.log('body:', body); // Print the HTML for the Google homepage.
   var parsedWeather = JSON.parse(body);
-  console.log(parsedWeather)
+  console.log("Temperatura de Imperatriz: "+parsedWeather['main']['temp'])
 });
